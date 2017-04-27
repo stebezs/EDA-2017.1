@@ -9,7 +9,7 @@ struct cadastro {
 } ;
 
 typedef struct Tno{
-  
+
 }
 
 
