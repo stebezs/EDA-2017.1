@@ -1,0 +1,20 @@
+11, Rosangela, Cardoso, 25
+10, Marcos, Silva, 21
+1, Maria, Ferreira, 19
+3, Carlos, Roberto, 22
+12, Calixto, Abdala, 26
+5, Helio, Rocha, 17
+9, Mariana, Rodrigues, 23
+15, William, Junior, 22
+16, Henrique, Calixto, 21
+13, Manuel, Peradeles, 23
+20, Raul, Miranda, 17
+17, Maria, Souza, 27
+2, Paulo, Castro, 31
+4, Jose, Silverio, 43
+6, Carla, Pietrobon, 54
+7, Pedro, Martins, 47
+8, Mariangela, Pedrosa, 24
+14, Sebastiao, Prado, 29
+
+  

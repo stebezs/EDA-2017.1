@@ -21,7 +21,6 @@ void iniciaLista (Tno *listaCadastro){
   prox->NULL;
   anterior->NULL;
   tamanhoLista = 0;
-}
 
 
 // Liste na tela todos os registros por ordem crescente de código;
