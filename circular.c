@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct Node {
+typedef struct Node {
   int codigo;
-  char primeiroNOme;
+  char primeiroNome;
   char nomeFamilia;
   int idade;
   struct Node *proximo;
@@ -17,37 +17,43 @@ typedef struct Tno {
   struct Node *tail;
 } ;
 
-void iniciaLista (Tno *listaCadastro){
-  prox->NULL;
-  anterior->NULL;
-  tamanhoLista = 0;
+Node iniciaNode (int codigo, char *primeiroNome, char *nomeFamilia, int idade) {
+  novoNode = (Node *)malloc(sizeof(Node));
+  novoNode->codigo;
+  novoNode->primeiroNome;
+  novoNode->nomeFamilia;
+  novoNode->idade;
 
+  return novoNode;
+}
 
 // Liste na tela todos os registros por ordem crescente de código;
-void listar (struct Tno *ptlista) {
+void insereCrescente (Node *pessoa, Node cadastro) {
+  Node *nodeAtual, *novoNode, *nodeAnterior;
+  novoNode = (Node *)malloc(sizeof(Node));
 
-     int i = 0;
-     struct Tno *pont;
+  nodeAtual = pessoa;
+  nodeAnterior = NULL
+  novoNode->novo = novo;
 
-     pont = ptlista->head;
-     while (pont != ptlista) {
-           printf("Elemento %d = %d\n", i++, pont->info);
-           pont = pont->tail;
-     }
+  if (nodeAtual == NULL) {
+    novoNode->prox = NULL;
+    pessoa = novoNode;
+  } else {
+      while (nodeAtual != NULL && nodeAtual->novo < novo) {
+          nodeAnterior = nodeAtual;
+          nodeAtual = nodeAtual->prox;
+      }
+      novoNode->prox = nodeAtual;
+      if (nodeAnterior == NULL){
+        pessoa =  novoNode
+      } else {
+          nodeAnterior->prox = novo;
+      }
+  }
 }
 
 // Liste na tela todos os registros por ordem decrescente de código;
-void listar (struct Tno *ptlista) {
-
-     int i = 0;
-     struct Tno *pont;
-
-     pont = ptlista->head;
-     while (pont != ptlista) {
-           printf("Elemento %d = %d\n", i++, pont->info);
-           pont = pont->;
-     }
-}
 
 
 // Leia os dados de um novo registro e o inclua na lista (mantendo-a ordenada por código). Lembre-se que não pode haver códigos repetidos.
@@ -60,6 +66,7 @@ void listar (struct Tno *ptlista) {
 
 
 int main() {
+  Node *lista = malloc(sizeof(Node));
 
   return 0;
 }
