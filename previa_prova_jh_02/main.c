@@ -153,16 +153,16 @@ void CriaListaUnificada(TNoI *pInd, TNoC *pCom, TDescritorS *pServ, TDescritorU 
 {
   FILE* parq;
   TCadastro pregaux;
-  TNoU *plista,*pnovono
+  TNoU *plista,*pnovono;
   TDescritorU *aux;
-  aux = pUnica->Inicio;
+  aux = pUnica;
 
   if(parq==NULL)
-      return NUll;
+
   plista = NULL;
   while(pInd != NULL) {
-      pnovono = (TNoS *)malloc(sizeof(TNoS));
-      pnovono->Dados = (TCadastro *)malloc(sizeof(TCadastro));
+      pnovono = (TNoU *)malloc(sizeof(TNoU));
+      pnovono->Dados = (TCadastroU *)malloc(sizeof(TCadastroU));
       strcpy(pnovono->Dados->CNPJ, pregaux.CNPJ);
       strcpy(pnovono->Dados->RazaoSocial, pregaux.RazaoSocial);
       strcpy(pnovono->Dados->Cidade, pregaux.Cidade);
@@ -173,7 +173,6 @@ void CriaListaUnificada(TNoI *pInd, TNoC *pCom, TDescritorS *pServ, TDescritorU 
   aux->Inicio = plista;
   aux->Fim = pnovono;
   pUnica = aux;
-  return NULL;
 }
 
 
